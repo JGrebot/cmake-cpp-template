@@ -1,0 +1,3 @@
+[submodule "external/c4core"]
+	path = external/c4core
+	url = git@github.com:biojppm/c4core.git

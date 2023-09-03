@@ -1,4 +1,6 @@
-
+#
+# googletest
+#
 include(FetchContent)
 
 FetchContent_Declare(
@@ -10,3 +12,13 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 # Only done in test/CMakeLists.txt
 # FetchContent_MakeAvailable(googletest)
+
+
+#
+# c4core submodule
+# see https://github.com/biojppm/c4core
+#
+
+add_subdirectory(external/c4core)
+
+

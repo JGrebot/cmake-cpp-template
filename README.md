@@ -37,6 +37,27 @@ find . -type f \( -name "*.cpp" -o -name "*.hpp" \) -exec clang-format -i {} \;
 in the main directory.
 
 
+## C4core submodule
+See https://github.com/biojppm/c4core for details on the c4core
+library. This library is not compiled by default, but added as a
+submodule, if necessary.
+
+To clone it, type:
+git submodule update --init --recursive
+
+Then uncomment the line 
+```cmake
+    add_subdirectory(external/c4core)
+```
+in the file cmake/Fetch.cmake. And the line 
+```cmake
+    target_link_libraries(${PROJECT_NAME} PUBLIC c4core)
+```
+in the file cmake/ExecutableAndBuildingLibrary.cmake.
+
+
+
+
 ## Others
 Others available optionnal tools are:
     - cppcheck, 
