@@ -49,7 +49,7 @@ Then uncomment the line
 ```cmake
     add_subdirectory(external/c4core)
 ```
-in the file cmake/Fetch.cmake. And the line 
+in the file cmake/Fetch.cmake. And uncomment the lines
 ```cmake
     target_link_libraries(${PROJECT_NAME} PUBLIC c4core)
 ```

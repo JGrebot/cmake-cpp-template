@@ -21,7 +21,7 @@ if(${PROJECT_NAME}_BUILD_EXECUTABLE)
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     )
     
-    target_link_libraries(${PROJECT_NAME} PUBLIC c4core)
+    # target_link_libraries(${PROJECT_NAME} PUBLIC c4core)
 endif()
 
 
@@ -48,6 +48,8 @@ if(${PROJECT_NAME}_BUILD_LIBRARY_HEADERS_ONLY OR ${PROJECT_NAME}_ENABLE_UNIT_TES
         $<INSTALL_INTERFACE:include>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     )
+
+    # target_link_libraries(${PROJECT_NAME} PUBLIC c4core)
 endif()
 
 

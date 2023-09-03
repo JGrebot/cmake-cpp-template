@@ -19,6 +19,6 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 # see https://github.com/biojppm/c4core
 #
 
-add_subdirectory(external/c4core)
+# add_subdirectory(external/c4core)
 
 
